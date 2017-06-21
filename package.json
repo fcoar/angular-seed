@@ -1,0 +1,34 @@
+{
+  "name": "Angular_2_Development_with_TypeScript",
+  "version": "1.0.0",
+  "description": "An initial npm-managed project for Chapter 2",
+  "private": true,
+  "main": "server.js",
+  "dependencies": {
+    "@angular/common": "*",
+    "@angular/compiler": "*",
+    "@angular/core": "*",
+    "@angular/http": "*",
+    "@angular/platform-browser": "*",
+    "@angular/platform-browser-dynamic": "*",
+    "bootstrap": "*",
+    "core-js": "*",
+    "jquery": "*",
+    "rxjs": "*",
+    "systemjs": "^0.19.47",
+    "zone.js": "*"
+  },
+  "devDependencies": {
+    "concurrently": "*",
+    "typescript": "*"
+  },
+  "scripts": {
+    "build": "tsc -p chapter2/angular-seed",
+    "build:watch": "tsc -p chapter2/angular-seed -w",
+    "serve": "node server.js",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
